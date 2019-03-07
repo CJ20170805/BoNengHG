@@ -1,0 +1,78 @@
+/*共同样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,img{padding:0; margin:0;}
+body{font-family:Arial, Helvetica, sans-serif;font-size: 14px;}
+ul li{list-style: none;}
+a{text-decoration:none;cursor:pointer;font-family:微软雅黑;}
+img{border: 0;}
+.fl {float: left}
+.fr {float: right}
+.tl {text-align: left;}
+.tc {text-align: center}
+.tr {text-align: right;}
+.ellipse {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.clearfix:before,.clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.container{width:1200px;height: 100%; margin:0 auto;}
+.clear{clear: both;}
+/* 整体色调  主题色*/
+.ztBg{background:rgb(32, 53, 128);}     
+.ztColor{color: rgb(32, 53, 128);}     
+/*定义滚动条样式*/
+::-webkit-scrollbar{width: 9px;height: 9px;background-color: #f5f5f5;}
+/*定义滚动条的轨道，内阴影及圆角*/
+::-webkit-scrollbar-track{border-radius: 10px;background-color: rgba(0,0,0,0.1);}
+/*定义滑块，内阴影及圆角*/
+::-webkit-scrollbar-thumb{width: 10px;height: 20px;border-radius: 10px; background-color: rgba(0,0,0,.1);}
+
+/*start_nav*/
+.nava_wrap{width: 100%;box-shadow: 0 0 2px 0 #ccc inset;font-size: 16px;height: 100px;position: fixed;top: 0;z-index: 99999;}
+.nava_wrap .logo{width: 450px;}
+.nava_wrap .logo a{color: #fff;}
+.nava_wrap .logo a .logop{height:100px;display: table-cell;vertical-align: middle;}
+.nava_wrap .logo a .logop b{display: block;}
+.nava_wrap .logo a .logop .tit{font-size: 26px;line-height: 28px;margin-bottom: 5px;}
+.nava_wrap .navul{width: 750px;}
+.nava_wrap .navul>li{float: left;width: 14%;text-align: center;}
+.nava_wrap .navul>li>a{font-size:16px;padding:0 20px;display:block;line-height: 100px;color: #fff;}
+.nava_wrap .navul>li>a.active{background: #ffec89;color: rgb(32, 53, 128);}
+.nava_wrap .navul>li>a:hover{background: #ffec89;color: rgb(32, 53, 128);}
+/*end_nav*/
+/*start_foot*/
+.foota_wrap2 .foota_btm{width:100%;min-height: 200px;margin-top:15px;padding: 40px 0 30px 0;background:rgb(36, 38, 45);}
+.foota_wrap2 .foota_btm .container{display: flex; justify-content:space-around;}
+.foota_wrap2 .foota_btm .logo{align-self: center;}
+.foota_wrap2 .logo{color: #fff;}
+.foota_wrap2 .logo b{display: block;font-size: 26px;line-height: 28px;margin-bottom: 8px;}
+.foota_wrap2 .logo p{font-size: 18px;}
+.foota_wrap2 .foota_btm .info{width:300px;padding-left: 50px;color: #acacac;background: url(../images/bg_06.png) no-repeat left 30px center;align-self: center;}
+.foota_wrap2 .foota_btm .info p{line-height: 24px;}
+.foota_wrap2 .foota_btm .coact{align-self: center;color: #ACACAC;}
+.foota_wrap2 .foota_btm .coact .erweima{padding-left:24px;background: url(../images/jiantou.png) no-repeat left 6px bottom 10px;}
+.foota_wrap2 .foota_btm .coact .einfo{text-align: right;padding-top: 16px;}
+.foota_wrap2 .foota_btm .coact .einfo p,.foota_wrap2 .foota_btm .coact .einfo h2{line-height: 24px;}
+.foota_wrap2 .foota_btm .coact .einfo .gz{margin-top: 36px;}
+.foota_wrap2 .foota_btm .foot_p{padding: 10px 0;color: #ACACAC;text-align: center;}
+.foota_wrap2 .foota_btm .foot_p>p{line-height: 24px;}
+/*end_foot*/
+
+/*内页布局*/
+.wrapflex{width: 100%;margin-top: 30px;}
+.wrapflex .wrapflex_l{width: 280px;}
+.wrapflex .wrapflex_l .flex_lcnt{width: 220px;}
+.wrapflex .wrapflex_l .flex_lcnt .tit{font-size: 24px;margin-bottom: 20px;}
+.wrapflex_l .prd_class{background:rgb(32, 53, 128);margin-bottom: 30px;}
+.wrapflex_l .prd_class li{padding-left: 10px;}
+.wrapflex_l .prd_class li a{display: block;width: 100%;background: #F2F2F2;border-bottom: 1px solid #aaa;line-height: 54px;text-align: center;color: #5A5A5A}
+.wrapflex_l .prd_class li a.on{background: rgb(32, 53, 128);color: #fff;}
+.wrapflex_l .prd_class li a:hover{background: rgb(32, 53, 128);color: #fff;}
+.wrapflex_l .contcat .contactp{display: flex;justify-content: space-between;margin-bottom: 20px;align-items: center;}
+.wrapflex_l .contcat .contactp img{width: 25px;height: auto;}
+.wrapflex_l .contcat .contactp p{width: 180px;color: #666;}
+.wrapflex_l .zxyy_btn{display: block;width: 218px;height: 54px;line-height: 54px;margin-top:40px;border: 1px solid rgb(32, 53, 128);text-align: center;border-radius: 4px;transition: all .3s;color: rgba(31,53,128,1);}
+.wrapflex_l .zxyy_btn:hover{background: rgb(32, 53, 128);color:#fff;}
+.wrapflex_r{width: 920px;}
+.wrapflex_r .mbxtit {line-height: 30px;height: 30px;border-bottom: 1px solid #dbdbdb;padding-bottom: 5px;}
+.wrapflex_r .mbxtit a{color: #333;}
+.wrapflex_r .cntwrap{padding: 50px 0;}
+
+
